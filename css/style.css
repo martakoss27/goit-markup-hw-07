@@ -688,7 +688,7 @@ h1 {
   margin: auto;
   width: 60%;
 }
-.filter-button {
+.filters__button {
   width: 128px;
   height: 38px;
   font-family: "Roboto";
@@ -710,7 +710,7 @@ h1 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-button:hover {
+.filters__button:hover {
   background: var(--additional-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -725,7 +725,7 @@ h1 {
   gap: 20px;
 }
 
-.project-box {
+.project__box {
   flex-basis: calc(100%-2 * 20px) / 3;
   background: var(--main-backroung-color);
   border: 1px solid #eeeeee;
@@ -741,13 +741,13 @@ h1 {
 .project-box:hover .overlay {
   transform: translateX(0%);
 }
-.up {
+.project__img {
   position: relative;
   width: 370px;
   height: 294px;
   overflow: hidden;
 }
-.overlay {
+.project__overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -762,7 +762,7 @@ h1 {
   transition: transform 250ms ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay-content {
+.overlay__content {
   width: 322px;
   height: 140px;
   font-family: "Roboto";
@@ -774,7 +774,7 @@ h1 {
 
   color: #ffffff;
 }
-.row-title {
+.project__title {
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -789,7 +789,7 @@ h4 {
   text-align: left;
   color: var(--main-text-color);
 }
-.row-description {
+.project__description {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
