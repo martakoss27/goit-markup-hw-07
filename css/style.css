@@ -11,7 +11,7 @@
   /*links and buttons*/
   --cursor: pointer;
 }
-
+/*Body*/
 body {
   width: 100%;
   font-family: "Roboto", sans-serif;
@@ -49,7 +49,7 @@ button:hover {
   width: 100%;
   border: 1px solid #ececec;
 }
-.header-flex {
+.header-list {
   height: 80px;
   margin: auto;
   display: flex;
@@ -58,10 +58,10 @@ button:hover {
   align-items: center;
   padding: 0;
 }
-.header-item-1 {
+.header__list__item__1 {
   width: 14%;
 }
-.header-logo {
+.header__logo {
   display: block;
   text-align: center;
   font-family: "Raleway";
@@ -74,10 +74,10 @@ button:hover {
 
   color: var(--additional-color);
 }
-.header-item-2 {
+.header__list__item__2 {
   width: 20%;
 }
-.header-nav-list {
+.header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,7 +85,7 @@ button:hover {
   padding: 0;
   list-style-type: none;
 }
-.header-nav-item-1 {
+.header__nav__item--1 {
   position: relative;
   text-decoration: none;
   font-family: "Roboto";
@@ -98,7 +98,7 @@ button:hover {
   transition: ;
 }
 
-.header-nav-item-1:hover::after {
+.header__nav__item--1:hover::after {
   display: block;
   position: absolute;
   content: "";
@@ -109,7 +109,7 @@ button:hover {
   background: var(--additional-color);
   border-radius: 2px;
 }
-.header-nav-item {
+.header__nav__item {
   position: relative;
   text-decoration: none;
   font-family: "Roboto";
@@ -120,7 +120,7 @@ button:hover {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
-.header-nav-item:hover::after {
+.header__nav__item:hover::after {
   display: block;
   position: absolute;
   content: "";
@@ -132,17 +132,17 @@ button:hover {
   border-radius: 2px;
 }
 
-.header-item-3 {
+.header__item__3 {
   width: 30%;
 }
-.header-contacts-list {
+.header__contacts__list {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
   padding: 0;
   height: auto;
 }
-.header-contact-list-item {
+.header__contact__list__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,26 +151,16 @@ button:hover {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-contact-list-item:hover {
+.header__contact__list__item:hover {
   --color4: var(--additional-color);
   cursor: var(--cursor);
 }
-.header-contact-list-icon {
+.header__contact__list__icon {
   width: 16px;
   height: 24px;
   margin-right: 10px;
 }
-.header-contact-link-mail {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: var(--sec-text-color-gray);
-}
-.header-contact-link-tel {
+.header__contact__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -822,7 +812,16 @@ footer {
   width: 1200px;
   margin: auto;
 }
-.footer-logo {
+.footer1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+}
+.footer1--logo {
   display: block;
   font-family: "Raleway";
   font-style: normal;
@@ -834,39 +833,23 @@ footer {
 
   color: var(--additional-color);
 }
-.footer-address {
+.footer--address {
   margin: 0;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
   color: var(--text-color-white);
 }
-.footer-contacts-list {
+.footer--contacts {
+  list-style: none;
   padding: 0;
   margin: 0;
   margin-top: 4px;
-  list-style-type: none;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-2 {
+.footer2 {
   width: 206px;
   height: auto;
   margin: 0;
 }
-.find-us-on {
+.footer2__title {
   width: fit-content;
   height: 16px;
   margin: 0;
@@ -879,7 +862,7 @@ footer {
 
   color: var(--text-color-white);
 }
-.footer-social-media {
+.footer2__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -889,7 +872,7 @@ footer {
 
   list-style: none;
 }
-.footer-2-item {
+.footer2list__item {
   width: 44px;
   height: 44px;
 
@@ -899,21 +882,21 @@ footer {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-2-item:hover {
+.footer2list__item:hover {
   background-color: var(--additional-color);
   --color1: var(--text-color-white);
   cursor: var(--cursor);
 }
-.footer-icon {
+.footer2__icon {
   width: 44px;
   height: 44px;
   padding: 12px;
 }
-.footer-3 {
+.footer3 {
   width: 570px;
   height: 86px;
 }
-.footer-3-title {
+.footer3__title {
   margin: 0;
   font-family: "Roboto";
   font-style: normal;
@@ -925,13 +908,13 @@ footer {
 
   color: #ffffff;
 }
-.subscribe-form {
+.footer3__form {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
-.footer-email-input {
+.footer3__input {
   display: flex;
   align-items: center;
   width: 358px;
@@ -948,7 +931,7 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe {
+.footer3__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -966,7 +949,7 @@ footer {
   line-height: 30px;
   color: var(--text-color-white);
 }
-.subscribe-icon {
+.footer3__icon {
   width: 24px;
   height: 24px;
   margin-left: 30px;
