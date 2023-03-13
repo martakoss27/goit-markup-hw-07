@@ -44,6 +44,17 @@ button:hover {
   border-radius: 4px;
   cursor: var(--cursor);
 }
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+
+  letter-spacing: 0.03em;
+
+  color: var(--additional-color);
+}
 /*Header*/
 .header {
   width: 100%;
@@ -58,23 +69,14 @@ button:hover {
   align-items: center;
   padding: 0;
 }
-.header__list__item__1 {
+.header-list__item1 {
   width: 14%;
 }
 .header__logo {
   display: block;
   text-align: center;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--additional-color);
 }
-.header__list__item__2 {
+.header-list__item2 {
   width: 20%;
 }
 .header__nav {
@@ -85,7 +87,7 @@ button:hover {
   padding: 0;
   list-style-type: none;
 }
-.header__nav__item--1 {
+.header-nav__item--1 {
   position: relative;
   text-decoration: none;
   font-family: "Roboto";
@@ -98,7 +100,7 @@ button:hover {
   transition: ;
 }
 
-.header__nav__item--1:hover::after {
+.header-nav__item--1:hover::after {
   display: block;
   position: absolute;
   content: "";
@@ -109,7 +111,7 @@ button:hover {
   background: var(--additional-color);
   border-radius: 2px;
 }
-.header__nav__item {
+.header-nav__item {
   position: relative;
   text-decoration: none;
   font-family: "Roboto";
@@ -120,7 +122,7 @@ button:hover {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
-.header__nav__item:hover::after {
+.header-nav__item:hover::after {
   display: block;
   position: absolute;
   content: "";
@@ -132,17 +134,17 @@ button:hover {
   border-radius: 2px;
 }
 
-.header__item__3 {
+.header-list__item__3 {
   width: 30%;
 }
-.header__contacts__list {
+.header-contacts__list {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
   padding: 0;
   height: auto;
 }
-.header__contact__list__item {
+.header-contact__list__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,16 +153,16 @@ button:hover {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__contact__list__item:hover {
+.header-contact__list__item:hover {
   --color4: var(--additional-color);
   cursor: var(--cursor);
 }
-.header__contact__list__icon {
+.header-contact__list__icon {
   width: 16px;
   height: 24px;
   margin-right: 10px;
 }
-.header__contact__link {
+.header-contact__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -820,18 +822,6 @@ footer {
   line-height: 24px;
 
   letter-spacing: 0.03em;
-}
-.footer1--logo {
-  display: block;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--additional-color);
 }
 .footer--address {
   margin: 0;
