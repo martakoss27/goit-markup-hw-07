@@ -187,7 +187,7 @@ button:hover {
   background-position: 50% 50%;
 }
 
-h1 {
+.title__text {
   width: 66%;
   margin: auto;
   font-family: "Roboto";
@@ -201,7 +201,7 @@ h1 {
 
   color: var(--text-color-white);
 }
-.button-title {
+.title__button {
   display: block;
   margin: auto;
   margin-top: 30px;
@@ -224,7 +224,7 @@ h1 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-title:hover {
+.title__button:hover {
   background: #188ce8;
   color: var(--text-color-white);
 }
@@ -249,7 +249,7 @@ h1 {
   visibility: hidden;
   opacity: 1;
 }
-.modal-content {
+.modalContent {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -262,159 +262,7 @@ h1 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.modal-headline {
-  width: 448px;
-  height: 23px;
-  margin: 0;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-.modal-label {
-  display: flex;
-  flex-direction: column;
-  padding: 7px 0px 7px 0px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #757575;
-}
-.label-name {
-  margin: 0;
-  top: 10px;
-  position: relative;
-}
-.modal-icon {
-  position: relative;
-  top: 27px;
-  left: 10px;
-  width: 16px;
-  height: 15px;
-  margin: 0;
-}
-.modal-label:hover > .modal-icon {
-  fill: var(--additional-color);
-}
-.modal-label:focus-within > .modal-icon {
-  fill: var(--additional-color);
-}
-.modal-input {
-  width: 448px;
-  height: 40px;
-  padding-left: 30px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  cursor: pointer;
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-input:hover {
-  border: 1px solid var(--additional-color);
-}
-.modal-input:focus {
-  border: 1px solid var(--additional-color);
-}
-.modal-comment {
-  width: 448px;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-comment:hover {
-  border: 1px solid var(--additional-color);
-}
-.modal-comment:focus {
-  border: 1px solid var(--additional-color);
-}
-.label-name-comment {
-  position: relative;
-  margin: 0;
-  top: 0;
-}
-.checkbox-label {
-  position: relative;
-  display: block;
-  width: 447px;
-  height: 57px;
-  padding: 7px 0px 7px 27px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-
-  color: #757575;
-  cursor: pointer;
-}
-.check-icon {
-  position: absolute;
-  left: 5px;
-  top: 10px;
-  width: 16px;
-  height: 15px;
-  visibility: hidden;
-  z-index: 1;
-  transition-property: visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.check-input {
-  position: absolute;
-  left: 5px;
-  top: 10px;
-  width: 16px;
-  height: 15px;
-  cursor: pointer;
-}
-.check-input:checked ~ .check-icon {
-  visibility: visible;
-}
-.button-lable {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-.modal-button {
-  width: 200px;
-  height: 50px;
-  background-color: var(--additional-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
-}
-.modal-close {
+.modalContent__close {
   position: absolute;
   top: 3px;
   right: 3px;
@@ -432,29 +280,184 @@ h1 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover {
+.modalContent__close:hover {
   background-color: var(--additional-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: var(--text-color-white);
 }
-.modal-close-icon {
+.modalContent__closeIcon {
   width: 18px;
   height: 18px;
 }
+.modalContent__headline {
+  width: 448px;
+  height: 23px;
+  margin: 0;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.modalContent__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.modalForm__label {
+  display: flex;
+  flex-direction: column;
+  padding: 7px 0px 7px 0px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #757575;
+}
+.label__name {
+  margin: 0;
+  top: 10px;
+  position: relative;
+}
+.label__icon {
+  position: relative;
+  top: 27px;
+  left: 10px;
+  width: 16px;
+  height: 15px;
+  margin: 0;
+}
+.modalForm__label:hover > .modal-icon {
+  fill: var(--additional-color);
+}
+.modalForm__label:focus-within > .modal-icon {
+  fill: var(--additional-color);
+}
+.label__input {
+  width: 448px;
+  height: 40px;
+  padding-left: 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.label__input:hover {
+  border: 1px solid var(--additional-color);
+}
+.label__input:focus {
+  border: 1px solid var(--additional-color);
+}
+.label__commentName {
+  position: relative;
+  margin: 0;
+  top: 0;
+}
+.label__comment {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.label__comment:hover {
+  border: 1px solid var(--additional-color);
+}
+.label__comment:focus {
+  border: 1px solid var(--additional-color);
+}
+
+.modalForm__label--checkbox {
+  position: relative;
+  display: block;
+  width: 447px;
+  height: 57px;
+  padding: 7px 0px 7px 27px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+  cursor: pointer;
+}
+.checkbox__input {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+}
+.checkbox__input:checked ~ .checkbox__icon {
+  visibility: visible;
+}
+.checkbox__icon {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  width: 16px;
+  height: 15px;
+  visibility: hidden;
+  z-index: 1;
+  transition-property: visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modalForm__lable--button {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.label__button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--additional-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
 /*group-1*/
-.group-1-list {
+.group1List {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.group-1-list-item {
+.group1List__item {
   width: 270px;
   height: 251px;
 }
-.group-1-icon-box {
+.group1List__iconBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -463,11 +466,11 @@ h1 {
   background: var(--third-backround-color-gray);
   border-radius: 4px;
 }
-.group-1-icon {
+.iconBox__icon {
   width: 70px;
   height: 70px;
 }
-.group-1-header {
+.group1List__header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -478,7 +481,7 @@ h1 {
 
   color: var(--main-text-color);
 }
-.group-1-content {
+.group1List__content {
   height: 97px;
   margin: 10px 10px 0px 0px;
 
@@ -492,10 +495,10 @@ h1 {
 }
 
 /*what-we-do*/
-.what-we-do {
+.WhatWeDo {
   padding-top: 100px;
 }
-.what-we-do-header {
+.WhatWeDo__header {
   width: 20%;
   margin: auto;
   font-family: "Roboto";
@@ -508,14 +511,14 @@ h1 {
 
   color: var(--main-text-color);
 }
-.what-we-do-list {
+.WhatWeDo__list {
   display: flex;
   justify-content: space-evenly;
   padding: 0;
   margin: 50px 0px 0px 0px;
   list-style: none;
 }
-.label {
+.WWDList__label {
   display: block;
   width: 370px;
   height: 70px;
