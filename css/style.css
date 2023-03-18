@@ -540,12 +540,12 @@ button:hover {
   color: var(--text-color-white);
 }
 /*our-team*/
-.our-team {
+.OurTeam {
   width: 100%;
   height: auto;
   background: var(--third-backround-color-gray);
 }
-.our-team-header {
+.OurTeam__header {
   display: block;
   margin: auto;
   width: 15%;
@@ -560,7 +560,7 @@ button:hover {
 
   color: var(--main-text-color);
 }
-.our-team-list {
+.OurTeam__list {
   margin: auto;
   padding: 0;
   padding-top: 50px;
@@ -569,38 +569,31 @@ button:hover {
   justify-content: space-evenly;
   list-style-type: none;
 }
-.team-cards {
+.team__card {
   width: 270px;
   height: auto;
-
   opacity: 0.86;
   background: var(--main-backroung-color);
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-names {
+.teamCard__text {
   font-family: "Roboto";
   font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.text--name {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
 }
-.team-position {
-  font-family: "Roboto";
-  font-style: normal;
+.text--position {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
   color: var(--sec-text-color-gray);
-  text-align: center;
-  letter-spacing: 0.03em;
 }
-.team-social-media {
+.TeamSocialMedia {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -610,18 +603,18 @@ button:hover {
   padding: 0;
   list-style: none;
 }
-.team-social-media-item {
+.TeamSocialMedia__item {
   width: 44px;
   height: 44px;
   transition-property: background-color, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-social-media-item:hover {
+.TeamSocialMedia__item:hover {
   background-color: var(--additional-color);
   border-radius: 50%;
 }
-.team-icon {
+.TSMitem__icon {
   width: 44px;
   height: 44px;
   padding: 11px;
@@ -629,13 +622,13 @@ button:hover {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-icon:hover {
+.TSMitem__icon:hover {
   --color1: var(--text-color-white);
   stroke: var(--text-color-white);
   cursor: var(--cursor);
 }
 /*Regular Customers*/
-.regular-customers-header {
+.regularCustomers__header {
   display: block;
   margin: 0;
   font-family: "Roboto";
@@ -646,16 +639,15 @@ button:hover {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.regular-customers-list {
+.regularCustomers__list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   padding-top: 50px;
-
   list-style: none;
 }
-.regular-customers-item {
+.regularCustomersList__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -669,7 +661,7 @@ button:hover {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.regular-customers-item:hover {
+.regularCustomersList__item:hover {
   border: 1px solid var(--additional-color);
   border-radius: 4px;
 
@@ -677,7 +669,7 @@ button:hover {
   --color2: var(--additional-color);
   cursor: var(--cursor);
 }
-.regular-customers-icon {
+.regularCustomersList__icon {
   width: 106px;
   height: 60px;
 }
@@ -810,7 +802,7 @@ footer {
   width: 100%;
   background: var(--sec-background-color-dark);
 }
-.footer-container {
+.footerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -880,7 +872,7 @@ footer {
   --color1: var(--text-color-white);
   cursor: var(--cursor);
 }
-.footer2__icon {
+.footer2list__icon {
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -907,7 +899,7 @@ footer {
   align-items: center;
   margin-top: 20px;
 }
-.footer3__input {
+.footer3form__input {
   display: flex;
   align-items: center;
   width: 358px;
@@ -924,7 +916,7 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer3__button {
+.footer3form__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -942,7 +934,7 @@ footer {
   line-height: 30px;
   color: var(--text-color-white);
 }
-.footer3__icon {
+.footer3form__icon {
   width: 24px;
   height: 24px;
   margin-left: 30px;
