@@ -1,59 +1,14 @@
-$MainBackgroundColor: #ffffff;
-$SecBackgroundColor: #2f303a;
-$ThirdBackgroundColor: #f5f4fa;
+$mainBackgroundColor: #ffffff;
+$secBackgroundColor: #2f303a;
+$thirdBackgroundColor: #f5f4fa;
 
-$MainTextColor: #212121;
-$SecTextColorGray: #757575;
-$TextColorWhite: #ffffff;
-$AdditionalColor: #2196f3;
+$mainTextColor: #212121;
+$secTextColorGray: #757575;
+$textColorWhite: #ffffff;
+$additionalColor: #2196f3;
 
-$MainFontFamiliy: "Roboto";
-$SecFontFamily: "Releway";
-$FontStyleNormal: normal;
+$mainFontFamily: "Roboto", sans-serif;
+$secFontFamily: "Releway", sans-serif;
+$fontStyleNormal: normal;
 
-$Cursor: pointer;
-
-body {
-  width: 100%;
-  font-family: $MainFontFamiliy;
-  font-style: $FontStyleNormal;
-  color: $MainTextColor;
-  background: $MainBackgroundColor;
-}
-.container {
-  width: 1200px;
-  margin: auto;
-}
-.section {
-  padding: 94px 0px 94px 0px;
-}
-a {
-  color: $MainTextColor;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:link {
-    text-decoration: none;
-  }
-  &:hover {
-    color: $AdditionalColor;
-    text-decoration: none;
-    cursor: $Cursor;
-  }
-}
-button:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: $Cursor;
-}
-.logo {
-  font-family: $SecFontFamily;
-  font-style: $FontStyleNormal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-
-  letter-spacing: 0.03em;
-
-  color: $AdditionalColor;
-}
+$cursor: pointer;

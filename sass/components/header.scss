@@ -32,13 +32,13 @@
 .header-nav__item--1 {
   position: relative;
   text-decoration: none;
-  font-family: $MainFontFamiliy;
-  font-style: $FontStyleNormal;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: $MainTextColor;
+  color: $mainTextColor;
   &:hover::after {
     display: block;
     position: absolute;
@@ -46,20 +46,20 @@
     margin-top: 29px;
     width: 48px;
     height: 4px;
-    background: $AdditionalColor;
+    background: $additionalColor;
     border-radius: 2px;
   }
 }
 .header-nav__item {
   position: relative;
   text-decoration: none;
-  font-family: $MainFontFamiliy;
-  font-style: $FontStyleNormal;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: $MainTextColor;
+  color: $mainTextColor;
   &:hover::after {
     display: block;
     position: absolute;
@@ -68,7 +68,7 @@
     width: 63px;
     height: 4px;
 
-    background: $AdditionalColor;
+    background: $additionalColor;
     border-radius: 2px;
   }
 }
@@ -91,7 +91,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    --color4: $AdditionalColor;
+    --color4: $additionalColor;
     cursor: var(--cursor);
   }
 }
@@ -108,5 +108,5 @@
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: $SecTextColorGray;
+  color: $secTextColorGray;
 }
