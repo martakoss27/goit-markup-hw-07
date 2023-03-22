@@ -30,12 +30,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    border: 1px solid $AdditionalColor;
+    border: 1px solid $additionalColor;
     border-radius: 4px;
 
-    --color1: $AdditionalColor;
-    --color2: $AdditionalColor;
-    cursor: $Cursor;
+    --color1: $additionalColor;
+    --color2: $additionalColor;
+    cursor: $cursor;
   }
 }
 .regularCustomersList__icon {

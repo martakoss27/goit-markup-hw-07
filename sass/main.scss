@@ -1,11 +1,12 @@
 @use "./utils/_vars.scss" as *;
-@import "./components/header.scss";
-@import "./components/footer.scss";
-@import "./components/portfolio.scss";
-@import "./components/main-title.scss";
-@import "./components/main-group1.scss";
-@import "./components/main-WhatWeDo.scss";
-@import "./components/main-regularCustomers.scss";
+@import "./components/_header.scss";
+@import "./components/_main-title.scss";
+@import "./components/_main-group1.scss";
+@import "./components/_mainWhatWeDo.scss";
+@import "./components/_mainOurTeam.scss";
+@import "./components/_main-regularCustomers.scss";
+@import "./components/_portfolio.scss";
+@import "./components/_footer.scss";
 
 body {
   width: 100%;
@@ -32,13 +33,13 @@ a {
   &:hover {
     color: $additionalColor;
     text-decoration: none;
-    cursor: $Cursor;
+    cursor: $cursor;
   }
 }
 button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: $Cursor;
+  cursor: $cursor;
 }
 .logo {
   font-family: $secFontFamily;

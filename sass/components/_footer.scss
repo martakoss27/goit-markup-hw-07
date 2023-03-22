@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  background: $SecBackgroundColor;
+  background: $secBackgroundColor;
 }
 .footerContainer {
   display: flex;
@@ -10,8 +10,8 @@ footer {
   margin: auto;
 }
 .footer1 {
-  font-family: $MainFontFamiliy;
-  font-style: $FontStyleNormal;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -20,7 +20,7 @@ footer {
 }
 .footer--address {
   margin: 0;
-  color: $TextColorWhite;
+  color: $textColorWhite;
 }
 .footer--contacts {
   list-style: none;
@@ -38,14 +38,14 @@ footer {
   width: fit-content;
   height: 16px;
   margin: 0;
-  font-family: $MainFontFamiliy;
-  font-style: $FontStyleNormal;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
 
-  color: $TextColorWhite;
+  color: $textColorWhite;
 }
 .footer2__list {
   display: flex;
@@ -67,9 +67,9 @@ footer {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background-color: $AdditionalColor;
-    --color1: $TextColorWhite;
-    cursor: $Cursor;
+    background-color: $additionalColor;
+    --color1: $textColorWhite;
+    cursor: $cursor;
   }
 }
 .footer2list__icon {
@@ -83,15 +83,15 @@ footer {
 }
 .footer3__title {
   margin: 0;
-  font-family: $MainFontFamiliy;
-  font-style: $FontStyleNormal;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: $TextColorWhite;
+  color: $textColorWhite;
 }
 .footer3__form {
   display: flex;
@@ -107,9 +107,9 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: $SecBackgroundColor;
-  font-family: $MainFontFamiliy;
-  font-style: $FontStyleNormal;
+  background-color: $secBackgroundColor;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -122,17 +122,17 @@ footer {
   align-items: center;
   width: 200px;
   height: 50px;
-  background: $AdditionalColor;
+  background: $additionalColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
 
-  font-family: $MainFontFamiliy;
-  font-style: $FontStyleNormal;
+  font-family: $mainFontFamily;
+  font-style: $fontStyleNormal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  color: $TextColorWhite;
+  color: $textColorWhite;
 }
 .footer3form__icon {
   width: 24px;
