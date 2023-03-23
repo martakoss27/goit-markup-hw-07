@@ -68,7 +68,7 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: $additionalColor;
-    --color1: $textColorWhite;
+    --color1: #{$textColorWhite};
     cursor: $cursor;
   }
 }
